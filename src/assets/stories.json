@@ -1,0 +1,46 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "user": "Me",
+      "imageUrl": "../../../../../../assets/images/cofeed-account-owner.jpg",
+      "seen": true
+    },
+    {
+      "id": 3,
+      "user": "Etta",
+      "imageUrl": "../../../../../assets/images/etta.jpg",
+      "seen": true
+    },
+    {
+      "id": 6,
+      "user": "Dylan",
+      "imageUrl": "../../../../../assets/images/dylan.jpg",
+      "seen": true
+    },
+    {
+      "id": 2,
+      "user": "Jimi",
+      "imageUrl": "../../../../../assets/images/jimi-hendrix.jpg",
+      "seen": false
+    },
+    {
+      "id": 4,
+      "user": "Masha",
+      "imageUrl": "../../../../../assets/images/masha.jpg",
+      "seen": false
+    },
+    {
+      "id": 5,
+      "user": "Eric",
+      "imageUrl": "../../../../../assets/images/eric-clapton.jpg",
+      "seen": false
+    },
+    {
+      "id": 7,
+      "user": "Cohen",
+      "imageUrl": "../../../../../assets/images/cohen.jpg",
+      "seen": false
+    }
+  ]
+}

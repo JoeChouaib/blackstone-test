@@ -1,0 +1,91 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+
+@import "./base/helpers";
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/slider";
+
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/navigation";
+
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/home";
+
+@import "./themes/themes";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+
+  .layout-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    app-left-nav {
+      background-color: $white-color;
+      height: 100%;
+      width: 18%;
+      padding: 2rem 4rem;
+    }
+    .content {
+      position: relative;
+      height: 100%;
+      width: 54%;
+      padding: 1rem 5rem;
+      background-color: $light-gray-color;
+      .vertical-line {
+        position: absolute;
+        width: 0.1rem;
+        height: 90%;
+        right: 0rem;
+        top: 5%;
+        background-color: $gray-color;
+      }
+    }
+    app-right-nav {
+      height: 100%;
+      width: 28%;
+      padding: 2rem 4rem;
+      background-color: $light-gray-color;
+    }
+  }
+}
+// Media queries for laptops Big screen
+@media (min-width: 1366px) {
+  html {
+    font-size: 11.5px;
+  }
+}
+@media (min-width: 1449px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+@media (min-width: 1549px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+// Media queries for smaller screens
+@media (max-width: 1280px) {
+  html {
+    font-size: 9.5px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+}

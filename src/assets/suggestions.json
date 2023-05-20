@@ -1,0 +1,25 @@
+{
+  "suggestions": [
+    {
+      "id": 1,
+      "name": "Kim Wexler",
+      "username": "@Wexler_",
+      "imageUrl": "../../../assets/images/kim.jpg",
+      "follow": false
+    },
+    {
+      "id": 2,
+      "name": "Mel Gibson",
+      "username": "@Gibson_",
+      "imageUrl": "../../../assets/images/mel-gibson.jpg",
+      "follow": true
+    },
+    {
+      "id": 3,
+      "name": "Adrian Brody",
+      "username": "@Adrian_",
+      "imageUrl": "../../../assets/images/adrian.jpg",
+      "follow": false
+    }
+  ]
+}
