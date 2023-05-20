@@ -90,11 +90,14 @@
           gap: 1rem;
           li {
             span {
+              display: flex;
+              align-items: center;
+              gap: 0.3rem;
               button {
                 font-size: 1.2rem;
                 mat-icon {
                   font-size: 2rem;
-                  margin-top: 0.5rem;
+                  height: 2rem;
                 }
               }
             }
