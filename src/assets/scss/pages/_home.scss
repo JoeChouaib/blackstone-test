@@ -6,31 +6,38 @@
   width: 100%;
   height: 100%;
   header {
-    @include center-content;
     width: 100%;
     height: fit-content;
-    .stories-list {
-      display: flex;
-      gap: 2.5rem;
-      li {
-        a {
-          @include center-content;
-          flex-direction: column;
-          gap: 0.2rem;
-          .story-img-wrapper {
-            width: 5.5rem;
-            height: 5.5rem;
-            border-radius: 10rem;
-            border: 0.3rem solid $primary-color;
-            img {
-              width: 99%;
-              height: 99%;
-              border: 0.2rem solid transparent;
+    app-stories {
+      width: 100%;
+      .stories-list {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        gap: 2.5rem;
+        li {
+          display: inline-block;
+          a {
+            @include center-content;
+            flex-direction: column;
+            gap: 0.2rem;
+            .story-img-wrapper {
+              width: 5.5rem;
+              height: 5.5rem;
               border-radius: 10rem;
+              border: 0.3rem solid $primary-color;
+              img {
+                width: 99%;
+                height: 99%;
+                border: 0.2rem solid transparent;
+                border-radius: 10rem;
+              }
             }
-          }
-          .seen-story-img-wrapper {
-            border-color: rgb(177, 177, 177) !important;
+            .seen-story-img-wrapper {
+              border-color: rgb(177, 177, 177) !important;
+            }
           }
         }
       }
@@ -61,13 +68,14 @@
     }
     .grid-item {
       width: 100%;
-      height: 21rem;
+      height: 19rem;
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      justify-content: space-between;
+
       .posted-feed-img {
         width: 100%;
-        height: 75%;
+        height: 78%;
         img {
           width: 100%;
           height: 100%;

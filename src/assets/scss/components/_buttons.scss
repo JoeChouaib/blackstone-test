@@ -69,3 +69,16 @@ span {
     height: 1.4rem;
   }
 }
+.burger-menu {
+  position: absolute;
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  right: 3rem;
+  top: 3rem;
+  cursor: pointer;
+  mat-icon {
+    color: $primary-color;
+  }
+}

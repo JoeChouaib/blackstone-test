@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./left-nav.component.scss'],
 })
 export class LeftNavComponent {
+  isBurgerMenuActive: boolean = true;
   account: boolean = true;
 
   constructor() {}
@@ -20,5 +21,10 @@ export class LeftNavComponent {
 
   onToggleAccount(): void {
     this.account = !this.account;
+  }
+
+  // Toggle Mobile Burger menu Method
+  onMenuToggle(): void {
+    this.isBurgerMenuActive = !this.isBurgerMenuActive;
   }
 }
